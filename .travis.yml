@@ -20,7 +20,7 @@ services:
  - mysql
 
 # Cache Composer and db export.
-# I removed caching of Drush since you have to clear Drush cache to get new Drupal versions.
+# I removed caching of drush since you have to clear drush cache to get new Drupal versions.
 cache:
   directories:
     - $HOME/.composer/cache/files
