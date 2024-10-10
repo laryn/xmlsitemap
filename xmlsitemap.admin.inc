@@ -12,6 +12,9 @@
 function xmlsitemap_sitemap_list_form() {
   $destination = backdrop_get_destination();
 
+  module_load_include('inc', 'xmlsitemap');
+  xmlsitemap_check_status();
+
   // Build the 'Update options' form.
   $form['#operations'] = module_invoke_all('xmlsitemap_sitemap_operations');
   $operations = array();
